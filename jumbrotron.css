@@ -1,0 +1,22 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-brand{
+	color: #13A2E0;
+}
+.jumbotron {
+	background-color: #227498;
+	color: #FFFFFF;
+	padding-top: 0px;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(106, 238, 244,0.4);
+}
+h1,h2 {
+	color: #13A2E0;
+}

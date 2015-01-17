@@ -1,0 +1,21 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.navbar {
+	margin-bottom: 10px;
+}
+.navbar-default .navbar-brand{
+	color: #13A2E0;
+}
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(32, 173, 89,0.4);
+}
+h1,h2,h3 {
+	color: #13A2E0;
+	margin: 10px;
+}
+.input-group {
+margin-bottom: 10px;
+}
