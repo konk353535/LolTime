@@ -78,7 +78,7 @@
 				  <button type="button" class="btn btn-default" onmousedown="update_page()">Graph</button>
 				</form>
 		    <!-- Output from JS Func Update_Graph (data pulled From get_group_game_time.php) -->
-				<div id="graph_container"></div>
+				<div id="graph_container" style="height: 450px"></div>
       </div>
     </div>
 
@@ -96,7 +96,7 @@
       </div>
       <hr>
       <footer>
-        <p>&copy; Romaior Co 2014</p>
+        <p>&copy; Romaior Co 2014s</p>
       </footer>
     </div> <!-- /container -->
 
@@ -239,7 +239,7 @@
 		    $('#graph_container').highcharts({
 		        chart: {
 		            type: 'column',
-		            height: 500
+		            height: 400
 		        },
 		        title: {
 		            text: 'Group: ' + groupName
@@ -249,7 +249,7 @@
 		            text: 'Time Played last ' + Get_Time_Options()
 		        },
 		        xAxis: {
-		            categories: labelsRaw
+		            categories: labelsRaw,
 		        },
 		        yAxis: {
 		            min: 0,

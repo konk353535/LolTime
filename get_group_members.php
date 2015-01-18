@@ -31,9 +31,9 @@ $Member_Ids_Sql = "SELECT ID FROM UserNames WHERE ID IN(
 
 
 $Group_Members_Sql = "SELECT Name, Summoner_Name, ROUND(SUM(timePlayed)/60) as Total_Time 
-						FROM UserNames, games_database 
-						WHERE UserNames.ID = games_database.UserNames_ID AND 
-						games_database.UserNames_ID IN (".$Member_Ids_Sql.") 
+						FROM UserNames left JOIN games_database 
+						ON UserNames.ID = games_database.UserNames_ID 
+						WHERE UserNames.ID IN ({$Member_Ids_Sql}) 
 						GROUP BY UserNames.ID 
 						ORDER BY Total_Time DESC";
 
